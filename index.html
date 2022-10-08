@@ -57,67 +57,72 @@
     </script>
   </head>
   <body
-    class="pt-16 pb-8 min-h-screen flex flex-col gap-10 items-center justify-center"
+    class="pt-16 pb-8 min-h-screen flex flex-col gap-10 items-center justify-center lg:gap-16"
   >
     <header class="max-w-[87%]">
       <a href="index.html"
-        ><img class="w-14 lg:w-full" src="./images/logo.svg" alt="Logo"
+        ><img class="w-14 md:w-16 lg:w-auto" src="./images/logo.svg" alt="Logo"
       /></a>
     </header>
-    <main class="max-w-[87%] text-center grid gap-4">
-      <h1 class="text-[1.4rem] text-neutral-gray">
+    <main class="max-w-[87%] text-center grid gap-4 lg:max-w-[50%]">
+      <h1 class="text-[1.4rem] text-neutral-gray md:text-4xl lg:text-5xl">
         We are launching
         <span class="text-neutral-dark-blue font-bold">soon!</span>
       </h1>
-      <p class="text-sm">Subscribe and get notified</p>
-      <form id="form-email" class="grid gap-2 mt-4">
-        <div class="relative">
+      <p class="text-sm md:text-base lg:text-lg">Subscribe and get notified</p>
+      <form
+        id="form-email"
+        class="flex flex-col gap-2 mt-4 md:flex-row md:gap-3 lg:gap-5"
+      >
+        <div class="md:w-full">
           <input
             id="email"
-            class="w-[90%] bg-transparent pl-8 py-2.5 border border-secondary-pale-blue outline-none rounded-full text-sm placeholder:text-secondary-pale-blue placeholder:text-xs lg:px-7 lg:py-4 lg:text-lg lg:placeholder:text-lg"
+            class="w-[90%] bg-transparent pl-8 py-2.5 border border-secondary-pale-blue outline-none rounded-full text-sm placeholder:text-secondary-pale-blue placeholder:text-xs md:w-full md:text-base md:placeholder:text-base lg:text-lg lg:placeholder:text-lg lg:pl-7 lg:py-3.5"
             type="email"
-            placeholder="Your email address"
+            placeholder="Your email address.."
           />
 
           <p
             id="empty-input-warning"
-            class="hidden my-2 text-[0.6rem] font-semibold text-secondary-light-red italic lg:text-base"
+            class="hidden my-2 text-[0.6rem] text-secondary-light-red italic md:text-xs md:text-left md:translate-x-7"
           >
             Whoops! It looks like you forgot to add your email
           </p>
           <p
             id="input-warning"
-            class="hidden my-2 text-[0.6rem] font-semibold text-secondary-light-red italic lg:text-base"
+            class="hidden my-2 text-[0.6rem] text-secondary-light-red italic md:text-xs md:text-left md:translate-x-7"
           >
             Please provide a valid email address
           </p>
           <p
             id="input-success"
-            class="hidden my-2 text-[0.6rem] font-semibold text-green-500 lg:text-base"
+            class="hidden my-2 text-[0.6rem] text-green-500 md:text-xs md:text-left md:translate-x-7"
           >
             Looks good!
           </p>
         </div>
         <button
-          class="w-[90%] mx-auto text-xs font-semibold bg-primary-blue px-5 py-3 rounded-full text-white shadow-xl flex justify-center items-center hover:shadow-2xl"
+          class="w-[90%] mx-auto text-xs font-semibold bg-primary-blue px-5 py-3 rounded-full text-white shadow-xl flex justify-center items-center hover:shadow-2xl md:w-[20%] md:text-sm md:h-max lg:w-[35%] lg:text-base lg:py-[1.05rem] lg:hover:bg-opacity-70"
         >
           Notify Me
         </button>
-        <div class="my-20">
-          <img
-            src="./images/illustration-dashboard.png"
-            alt="dashboard illustration"
-          />
-        </div>
       </form>
+      <div class="my-20 lg:mb-0 lg:mt-14">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="dashboard illustration"
+        />
+      </div>
     </main>
 
     <footer class="max-w-[87%] text-center mt-auto grid gap-7">
       <div class="flex gap-3 justify-center">
-        <a class="p-1.5 rounded-full border" href="#"
+        <a
+          class="p-1.5 rounded-full border group hover:bg-primary-blue"
+          href="#"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 fill-primary-blue ionicon"
+            class="w-4 fill-primary-blue group-hover:fill-white"
             viewBox="0 0 512 512"
           >
             <title>Logo Facebook</title>
@@ -126,10 +131,12 @@
               fill-rule="evenodd"
             /></svg
         ></a>
-        <a class="p-1.5 rounded-full border" href="#"
+        <a
+          class="p-1.5 rounded-full border group hover:bg-primary-blue"
+          href="#"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 fill-primary-blue ionicon"
+            class="w-4 fill-primary-blue group-hover:fill-white"
             viewBox="0 0 512 512"
           >
             <title>Logo Twitter</title>
@@ -137,10 +144,12 @@
               d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
             /></svg
         ></a>
-        <a class="p-1.5 rounded-full border" href="#"
+        <a
+          class="p-1.5 rounded-full border group hover:bg-primary-blue"
+          href="#"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 fill-primary-blue ionicon"
+            class="w-4 fill-primary-blue group-hover:fill-white"
             viewBox="0 0 512 512"
           >
             <title>Logo Instagram</title>
