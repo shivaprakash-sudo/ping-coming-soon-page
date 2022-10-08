@@ -14,16 +14,41 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom configuration of tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                blue: "hsl(223, 87%, 63%)",
+              },
+              secondary: {
+                "pale-blue": "hsl(223, 100%, 88%)",
+                "light-red": "hsl(354, 100%, 66%)",
+              },
+              neutral: {
+                gray: "hsl(0, 0%, 59%)",
+                "dark-blue": "hsl(209, 33%, 12%)",
+              },
+            },
+            fontFamily: {
+              sans: ["Libre Franklin", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
