@@ -70,7 +70,7 @@
         <span class="text-neutral-dark-blue font-bold">soon!</span>
       </h1>
       <p class="text-sm">Subscribe and get notified</p>
-      <div class="grid gap-2 mt-4">
+      <form id="form-email" class="grid gap-2 mt-4">
         <div class="relative">
           <input
             id="email"
@@ -81,27 +81,27 @@
 
           <p
             id="empty-input-warning"
-            class="hidden absolute top-[115%] left-5 text-xs text-primary-red-400 lg:text-base"
+            class="hidden my-2 text-[0.6rem] font-semibold text-secondary-light-red italic lg:text-base"
           >
             Whoops! It looks like you forgot to add your email
           </p>
           <p
             id="input-warning"
-            class="hidden absolute top-[115%] left-5 text-xs text-primary-red-400 lg:text-base"
+            class="hidden my-2 text-[0.6rem] font-semibold text-secondary-light-red italic lg:text-base"
           >
             Please provide a valid email address
           </p>
           <p
             id="input-success"
-            class="hidden absolute top-[115%] left-5 text-xs text-green-500 lg:text-base"
+            class="hidden my-2 text-[0.6rem] font-semibold text-green-500 lg:text-base"
           >
             Looks good!
           </p>
         </div>
         <button
-          class="w-[90%] mx-auto bg-primary-blue px-5 py-3 rounded-full text-white shadow-xl flex justify-center items-center hover:shadow-2xl"
+          class="w-[90%] mx-auto text-xs font-semibold bg-primary-blue px-5 py-3 rounded-full text-white shadow-xl flex justify-center items-center hover:shadow-2xl"
         >
-          <a class="text-xs font-semibold" href="#">Notify Me</a>
+          Notify Me
         </button>
         <div class="my-20">
           <img
@@ -109,7 +109,7 @@
             alt="dashboard illustration"
           />
         </div>
-      </div>
+      </form>
     </main>
 
     <footer class="max-w-[87%] text-center mt-auto grid gap-7">
@@ -173,5 +173,7 @@
         >.
       </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
